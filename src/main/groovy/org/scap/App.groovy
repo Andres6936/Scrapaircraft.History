@@ -78,9 +78,10 @@ class Application {
                 aircrafts.add(aircraft);
             }
 
-            def json = JsonOutput.prettyPrint(JsonOutput.toJson(aircraft));
+            final String json = JsonOutput.prettyPrint(JsonOutput.toJson(aircraft));
 
-            println json;
+            File file = new File('output/' + name.replace(' ', '-') + '.json');
+            file.write(json);
 
             // Debug Break
             break;
