@@ -1,0 +1,13 @@
+{
+  "capacity": "Flightcrew of two. Main cabin seating for eight to 10 passengers in a corporate configuration.",
+  "powerPlants": "Two 15.7kN (3500lb) AlliedSignal TFE73120 turbofans.",
+  "performance": "High cruising speed 857km/h (463kt), normal cruising speed 817km/h (441kt), long range cruising speed 804km/h (434kt). Max certificated altitude 51,000ft. Max range with four passengers and IFR reserves 3704km (2000nm).",
+  "type": "Mid size corporate jet",
+  "dimensions": "Wing span 14.57m (47ft 10in), length 17.68m (58ft 0in), height 4.30m (14ft 1in). Wing area 29.0m2 (311.6sq ft).",
+  "relatedAircraft": "Bombardier Learjet 45",
+  "countryOrigin": "United States of America",
+  "weights": "Empty 5466kg (12,050lb), basic operating empty 5783kg (12,750lb), max takeoff 9162kg (20,200lb).",
+  "history": "The new Bombardier Learjet 45 is Learjet's latest entry into the medium size corporate jet market. Bombardier owned Learjet announced it was developing the Model 45 at the US National Business Aircraft Association's annual convention in Dallas in September 1992. First flight was on October 7 1995 (the 32nd anniversary of the original Lear 23), and, after some delays, US FAA certification was granted on September 22 1997. The first customer aircraft was delivered in January 1998 The 45 is of classic Learjet design and layout. However a number of key design changes were made early into the 45's design life including a larger fin and rudder, extended engine pylons, smaller delta fins, full span elevators, and single piece flaps. Larger than the Learjet 31 and smaller than the 60, Learjet states that the 45's 1.50m (4.9ft) high and 1.55m (5.1ft) wide cabin will provide more head and shoulder room than any other aircraft in its class. The cabin is designed to accommodate double club seating, a galley and a full width aft rest room, while eight windows line each side of the cabin. The flightdeck features a four screen (two primary flight displays and two multifunction displays) Honeywell Primus 1000 integrated avionics suite, while an APU is standard. The 20 FADEC equipped version of the proven AlliedSignal TFE731 engine was developed in cooperation with Learjet for the 45 and incorporates 60 design changes to increase fuel economy and reduce operating and maintenance costs. While Learjet retains overall 45 program leadership, and is responsible for the aircraft's design, other Bombardier Group companies participate in Learjet 45 production. De Havilland Inc in Canada is responsible for wing construction, while Shorts of Northern Ireland in the UK builds the fuselage and empennage.",
+  "name": "Bombardier Learjet 45",
+  "production": "Approximately 200 delivered by late 2002."
+}

@@ -1,0 +1,13 @@
+{
+  "capacity": "Maximum load: 551150lbs (250000kg)",
+  "powerPlants": "6x Progress-D-18T",
+  "performance": "Max. speed - 528mph (850km/h), range with max payload - 2425nm (4500km), range with no cargo - 8310nm (15400km).",
+  "type": "Extra-Large cargo aircraft",
+  "dimensions": "Wingspan 290 ft (88.4m), lenght -- 84,00m, height -- 18,10.",
+  "relatedAircraft": "Antonov An-225 Mriya",
+  "countryOrigin": "Ukraine",
+  "weights": "Max. take off weight -- 600000kg",
+  "history": "Antonov An-225 \"Mriya\" is the world's largest aircraft. When it was built, it surpassed any airliner built before by 50%. It was designed for the transportation of the Russian Space Shuttle \"Buran\" by the Antonov Design Bureau (HQ in Kiev, Ukraine), which already had built good and large cargo aircraft such as the Antonov An-124 \"Ruslan\". The basic configuration of the An-225 is the same as the An-124, except the An-225 is longer, has no rear ramp/door assembly, and incorporates a 32-wheel landing gear system (two nose and fourteen main wheel bogies, seven per side, each with two wheels). An-225 \"Mriya\" (\"Mriya\" is Ukrainian word for \"dream) is also capable to transport other oversized objects/cargo. It is not a military aircraft, but it could find many military uses, because of the ability to transport cargo that no other aircraft is capable to. The plane had the first flight in early 1988 and entered service in 1989. It's first flight took 75 minutes. After the cancellation of the Buran space program, the only An-225 built was stored in spring 1994, and it's engines were used for An-124s. In 2001 the aircraft was made airworthy again, and made it's new first flight on May 7. There were rumors that the European Space Agency had plans to launch the unmanned British HoTOL (Horizontal Take-Off and Landing) from the An-225, though these rumors appear to be unfounded. Although, some possibilities for deployment have already been found. Plenty of customers are to be found in the USA. According to Bruce Bird, Director of the Charter Division of Air Foyle, parts of rocket launchers like the Delta and Atlas could be transported in the An-225. Lockheed's planned Venture Star could be transported on its back. Additionally the Mrija could serve as a launch platform for the X-34B. Furthermore big sections of aircraft could be transported in it. The complete assembled fuselage of a Boeing 737 can be fitted in the hold. A second An-225 was partly built, but was stored before it was finished. It is possible that more aircraft of the type will be built, depending on market demand.",
+  "name": "Antonov An-225 Mriya",
+  "production": "Only one was built since 1989, but a second frame was partially constructed and remains in storage."
+}

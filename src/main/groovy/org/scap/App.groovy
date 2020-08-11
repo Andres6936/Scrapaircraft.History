@@ -80,11 +80,14 @@ class Application {
 
             final String json = JsonOutput.prettyPrint(JsonOutput.toJson(aircraft));
 
-            File file = new File('output/' + name.replace(' ', '-') + '.json');
+            String filenameOutput = 'output/' + name.replace(' ', '-')
+                    .replace('/', '-') + '.json';
+
+            File file = new File(filenameOutput);
             file.write(json);
 
-            // Debug Break
-            break;
+            // For avoid will be blocked for the host
+            Thread.sleep(3000);
         }
     }
 }
