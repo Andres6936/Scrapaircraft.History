@@ -3,6 +3,7 @@ package org.scap
 import com.gargoylesoftware.htmlunit.WebClient
 import com.gargoylesoftware.htmlunit.html.DomElement
 import com.gargoylesoftware.htmlunit.html.HtmlDivision
+import com.gargoylesoftware.htmlunit.html.HtmlElement
 import com.gargoylesoftware.htmlunit.html.HtmlPage
 
 class Application {
@@ -11,6 +12,8 @@ class Application {
     private final static WebClient webClient = new WebClient();
 
     private final static ArrayList<String> links = new ArrayList<>();
+
+    private final static ArrayList<Aircraft> aircrafts = new ArrayList<>();
 
     // Methods
 
@@ -36,6 +39,40 @@ class Application {
 
             // The first element is 'h1', it element content the name of actual aircraft
             String name = page.getFirstByXPath("//div[@class='layout-blue-panel']").getFirstElementChild().asText();
+
+            Aircraft aircraft = new Aircraft();
+
+            aircraft.setName(name);
+
+            final ArrayList<HtmlDivision> properties = page.getByXPath('//div[@class="aircraftProperty"]');
+
+            for (HtmlDivision property : properties) {
+                String nameDiv = property.getFirstByXPath('div[@class="name"]').asText();
+                String descriptionDiv = property.getFirstByXPath('div[@class="description"]').asText();
+
+                if (nameDiv == "Country of Origin") {
+                    aircraft.setCountryOrigin(descriptionDiv);
+                } else if (nameDiv == "Type") {
+                    aircraft.setType(descriptionDiv)
+                } else if (nameDiv == "History") {
+                    aircraft.setHistory(descriptionDiv)
+                } else if (nameDiv == "Powerplants") {
+                    aircraft.setPowerPlants(descriptionDiv)
+                } else if (nameDiv == "Performance") {
+                    aircraft.setPerformance(descriptionDiv)
+                } else if (nameDiv == "Weights") {
+                    aircraft.setWeights(descriptionDiv)
+                } else if (nameDiv == "Dimensions") {
+                    aircraft.setDimensions(descriptionDiv)
+                } else if (nameDiv == "Capacity") {
+                    aircraft.setCapacity(descriptionDiv)
+                } else if (nameDiv == "Production") {
+                    aircraft.setProduction(descriptionDiv)
+                } else if (nameDiv == "Related Links") {
+                    aircraft.setRelatedAircraft(descriptionDiv)
+                }
+                aircrafts.add(aircraft);
+            }
 
             // Debug Break
             break;
