@@ -5,6 +5,7 @@ import com.gargoylesoftware.htmlunit.html.DomElement
 import com.gargoylesoftware.htmlunit.html.HtmlDivision
 import com.gargoylesoftware.htmlunit.html.HtmlElement
 import com.gargoylesoftware.htmlunit.html.HtmlPage
+import groovy.json.JsonOutput
 
 class Application {
     // Const Fields Static
@@ -70,9 +71,16 @@ class Application {
                     aircraft.setProduction(descriptionDiv)
                 } else if (nameDiv == "Related Links") {
                     aircraft.setRelatedAircraft(descriptionDiv)
+                } else {
+                    println "Unknown attribute: ${nameDiv} \n ${descriptionDiv}"
                 }
+
                 aircrafts.add(aircraft);
             }
+
+            def json = JsonOutput.prettyPrint(JsonOutput.toJson(aircraft));
+
+            println json;
 
             // Debug Break
             break;
