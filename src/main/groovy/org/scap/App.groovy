@@ -16,6 +16,7 @@ class Application {
 
     static def run() {
         webClient.getOptions().setJavaScriptEnabled(false);
+        webClient.getOptions().setCssEnabled(false);
         final HtmlPage page = webClient.getPage("https://www.airliners.net/aircraft-data");
         final ArrayList<HtmlDivision> div = page.getByXPath("//div[@class='title']");
 
@@ -26,7 +27,19 @@ class Application {
             links.add(linkElement.getAttribute('href'));
         }
 
-        print links;
+        parseEachPage();
+    }
+
+    private static def parseEachPage() {
+        for (String link : links) {
+            final HtmlPage page = webClient.getPage('https://www.airliners.net' + link);
+
+            // The first element is 'h1', it element content the name of actual aircraft
+            String name = page.getFirstByXPath("//div[@class='layout-blue-panel']").getFirstElementChild().asText();
+
+            // Debug Break
+            break;
+        }
     }
 }
 
