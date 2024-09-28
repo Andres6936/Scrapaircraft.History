@@ -1,3 +1,5 @@
 .idea/
 build/
 .gradle/
+*.mv.db
+*.trace.db
