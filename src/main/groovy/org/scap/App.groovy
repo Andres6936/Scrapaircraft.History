@@ -5,6 +5,7 @@ import com.gargoylesoftware.htmlunit.html.DomElement
 import com.gargoylesoftware.htmlunit.html.HtmlDivision
 import com.gargoylesoftware.htmlunit.html.HtmlElement
 import com.gargoylesoftware.htmlunit.html.HtmlPage
+import com.scap.Aircraft
 import groovy.json.JsonOutput
 
 class Application {
