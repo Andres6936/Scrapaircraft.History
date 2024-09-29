@@ -1,5 +1,8 @@
 package com.scap;
 
-public class Aircraft {
+import io.micronaut.serde.annotation.Serdeable;
 
+@Serdeable
+public class Aircraft {
+    public String name;
 }
