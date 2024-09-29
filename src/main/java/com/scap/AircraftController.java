@@ -2,6 +2,7 @@ package com.scap;
 
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
+import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Controller;
 
 import java.util.ArrayList;
@@ -16,15 +17,15 @@ public class AircraftController {
         return HttpResponse.status(HttpStatus.OK).body(new Aircraft[]{});
     }
 
-    public HttpResponse<Aircraft> save(Aircraft aircraft) {
-        return HttpResponse.status(HttpStatus.OK).body(new Aircraft());
+    public HttpResponse<Aircraft> save(@Body Aircraft aircraft) {
+        return HttpResponse.status(HttpStatus.OK).body(aircraft);
     }
 
-    public HttpResponse<Aircraft> update(Aircraft aircraft) {
-        return HttpResponse.status(HttpStatus.OK).body(new Aircraft());
+    public HttpResponse<Aircraft> update(@Body Aircraft aircraft) {
+        return HttpResponse.status(HttpStatus.OK).body(aircraft);
     }
 
-    public HttpResponse<Aircraft> delete(Aircraft aircraft) {
-        return HttpResponse.status(HttpStatus.OK).body(new Aircraft());
+    public HttpResponse<Aircraft> delete(@Body Aircraft aircraft) {
+        return HttpResponse.status(HttpStatus.OK).body(aircraft);
     }
 }
