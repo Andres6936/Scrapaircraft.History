@@ -1,2 +1,14 @@
-# Find one aircraft
+### Find one aircraft
 GET http://localhost:8080/aircraft/findOne
+
+### Find many aircraft
+GET http://localhost:8080/aircraft/findMany
+
+### Save aircraft
+PUT http://localhost:8080/aircraft/save
+
+### Update aircraft
+POST http://localhost:8080/aircraft/update
+
+### Delete aircraft
+DELETE http://localhost:8080/aircraft/delete
