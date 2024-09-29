@@ -1,0 +1,2 @@
+# Find one aircraft
+GET http://localhost:8080/aircraft/findOne
