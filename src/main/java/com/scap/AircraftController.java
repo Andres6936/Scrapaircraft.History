@@ -1,26 +1,30 @@
 package com.scap;
 
+import io.micronaut.http.HttpResponse;
+import io.micronaut.http.HttpStatus;
 import io.micronaut.http.annotation.Controller;
+
+import java.util.ArrayList;
 
 @Controller("/aircraft")
 public class AircraftController {
-    public Aircraft findOne() {
-        return null;
+    public HttpResponse<Aircraft> findOne() {
+        return HttpResponse.status(HttpStatus.OK).body(new Aircraft());
     }
 
-    public Aircraft[] findAll() {
-        return null;
+    public HttpResponse<Aircraft[]> findAll() {
+        return HttpResponse.status(HttpStatus.OK).body(new Aircraft[]{});
     }
 
-    public Aircraft save(Aircraft aircraft) {
-        return null;
+    public HttpResponse<Aircraft> save(Aircraft aircraft) {
+        return HttpResponse.status(HttpStatus.OK).body(new Aircraft());
     }
 
-    public Aircraft update(Aircraft aircraft) {
-        return null;
+    public HttpResponse<Aircraft> update(Aircraft aircraft) {
+        return HttpResponse.status(HttpStatus.OK).body(new Aircraft());
     }
 
-    public Aircraft delete(Aircraft aircraft) {
-        return null;
+    public HttpResponse<Aircraft> delete(Aircraft aircraft) {
+        return HttpResponse.status(HttpStatus.OK).body(new Aircraft());
     }
 }
